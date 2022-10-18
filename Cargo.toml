@@ -1,0 +1,9 @@
+[workspace]
+members = ["crate-a", "crate-b"]
+
+[patch.crates-io]
+rust_decimal = {git = "https://github.com/jenanwise/rust-decimal", rev = "cffeebcc3de18af2025e44889780f0095a68f6a2"}
+
+[workspace.dependencies]
+rkyv = {version = "0.7.39", default-features = false, features = ["size_64"]}
+rust_decimal = {version = "1.26.1", default-features = false, features = ["rkyv"]}

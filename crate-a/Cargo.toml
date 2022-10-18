@@ -1,0 +1,9 @@
+[package]
+edition = "2021"
+name = "crate-a"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+rkyv.workspace = true
+rust_decimal.workspace = true

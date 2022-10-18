@@ -1,0 +1,8 @@
+[package]
+edition = "2021"
+name = "crate-b"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+rust_decimal.workspace = true
